@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhso = +prompt("nhap doanh so ban hang");
+    let total;
+    if (doanhso <= 200000000){
+        total = doanhso * 10 / 100;
+        document.write("tien hoa hong nhan duoc la:" + total);
+    } else if (doanhso > 200000000 && doanhso <= 500000000) {
+        total = doanhso * 20 / 100;
+        document.write("tien hoa hong nhan duoc la:" + total);
+    } else if (doanhso > 500000000){
+        total = doanhso * 30 / 100;
+        document.write("tien hoa hong nhan duoc la:" + total);
+    }
+</script>
+</body>
+</html>

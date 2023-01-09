@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = +prompt("nhap diem kiem tra");
+    let giuaky = +prompt("nhap diem giua ky");
+    let cuoiky = +prompt("nhap diem cuoi ky");
+    let average = (kiemtra + giuaky + cuoiky) / 14
+    if (average < 5){
+        document.write("loai yeu");
+    } else if (average >= 5 && average < 6.5) {
+        document.write("loai trung binh");
+    } else if (average >= 6.5 && average < 7.5 ){
+        document.write("loai kha");
+    } else if (average >=7.5){
+        document.write("loai gioi");
+    }
+</script>
+</body>
+</html>

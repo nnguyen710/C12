@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch case</title>
+</head>
+<body>
+<script>
+    let month = +prompt("Nhap thang");
+    /* switch (month) {
+         case 1:
+             document.write("thang 1 co 31 ngay");
+             break;
+         case 2:
+             document.write("thang 2 co 28 va 29 ngay");
+             break;
+         case 3:
+             document.write("thang 3 co 31 ngay");
+             break;
+         case 4:
+             document.write("thang 4 co 30 ngay");
+             break;
+         case 5:
+             document.write("thang 5 co 31 ngay");
+             break;
+         case 6:
+             document.write("thang 6 co 30 ngay");
+             break;
+         case 7:
+             document.write("thang 7 co 31  ngay");
+             break;
+         case 8:
+             document.write("thang 8 co 31 ngay");
+             break;
+         case 9:
+             document.write("thang 9 co 30 ngay");
+             break;
+         case 10:
+             document.write("thang 10 co 31 ngay");
+             break;
+         case 11:
+             document.write("thang 11 co 30 ngay");
+             break;
+         case 12:
+             document.write("thang 12 co 31 ngay");
+             break;
+     } */
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            document.write("thang co 31 ngay la thang" + " " + month);
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            document.write("thang co 30 ngay la thang" + " " + month);
+            break;
+        case 2:
+            document.write("thang co 28 29 ngay la thang" + " " + month);
+            break;
+        default:
+            document.write("error");
+    }
+
+</script>
+</body>
+</html>
