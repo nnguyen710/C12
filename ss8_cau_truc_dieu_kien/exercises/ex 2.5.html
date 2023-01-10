@@ -6,7 +6,13 @@
 </head>
 <body>
 <script>
-
+    let a = +prompt("nhap canh a:");
+    let b = +prompt("nhap canh b:");
+    let areaTri; // co 3 cach de su dung bien rong la null, undefined, 0.
+        if (a > 0 && b > 0) {
+            areaTri = 1 / 2 * (a * b);
+            document.write("areaTri is:" + " " + areaTri);
+        }
 </script>
 </body>
 </html>
