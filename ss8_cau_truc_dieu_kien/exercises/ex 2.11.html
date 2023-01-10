@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thunhapcanhan = +prompt("Thu nhập cá nhân là:");
+    let total;
+        if (thunhapcanhan < 5000000) {
+            total = thunhapcanhan * 5 / 100;
+            document.write("Thuế thu nhập cá nhân là: " + total);
+        } else if (thunhapcanhan >= 5000000 && thunhapcanhan < 10000000) {
+            total = thunhapcanhan * 10/ 100;
+            document.write("Thuế thu nhập cá nhân là: " + total);
+        } else if (thunhapcanhan >=10000000 && thunhapcanhan < 80000000) {
+            total = thunhapcanhan * 25/ 100;
+            document.write("Thuế thu nhập cá nhân là: " + total);
+        } else if (thunhapcanhan >= 80000000){
+            total = thunhapcanhan * 30 / 100;
+            document.write("Thuế thu nhập cá nhân là: " + total);
+        }
+</script>
+</body>
+</html>

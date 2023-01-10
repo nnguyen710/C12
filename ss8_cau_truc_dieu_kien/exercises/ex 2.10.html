@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let giadien = +prompt("nhập số kWh đã dùng:");
+    let total;
+        if (giadien < 50){
+            total = giadien * 1500;
+            document.write("Tổng tiền điện là: " + total);
+        } else if (giadien >= 50 && giadien < 100) {
+            total = giadien * 2000;
+            document.write("Tổng tiền điện là: " + total);
+        } else if (giadien >= 100 && giadien < 200) {
+            total = giadien * 2500;
+            document.write("Tổng tiền điện là: " + total);
+        } else if (giadien >= 200) {
+            total = giadien * 3000;
+            document.write("Tổng tiền điện là: " + total);
+        }
+</script>
+</body>
+</html>
