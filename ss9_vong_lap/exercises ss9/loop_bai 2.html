@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //  let temp; //khai bao bien nhiet do
+  //  do {
+       let  temp = prompt("Nhap lai nhiet do"); //neu nhiet do lon hon 100 thi phai nhap lai
+      while (temp > 100 || temp < 20) {
+            if (temp > 100) {
+                alert("Yeu cau nguoi dung giam nhiet do");
+                temp = prompt("Nhap lai nhiet do")
+            }
+            if (temp < 20) {
+                alert("Yeu cau nguoi dung tang nhiet do");
+                temp = prompt("Nhap lai nhiet do")
+            }
+    }
+    alert("nhiet do OK")
+    // do {
+    //     temp = +prompt("nhap nhiet do:"); //neu nhiet do nho hon 20 thi phai nhap lai
+    // } while (temp < 20)
+</script>
+</body>
+</html>
