@@ -9,21 +9,28 @@
     let int1 = +prompt("int1");
     let int2 = +prompt("int2");
     let int3 = +prompt("int3");
-    let max;
-    if (int1 > int2 && int1 > int3) { // dat dieu kien de int1 la so lon nhat
-        max = int1;
-        document.write("max" + "" + max);
-    } else if (int2 > int1 && int2 > int3) { // dat dieu kien de int2 la so lon nhat
+    let max = int1;
+     if (max < int2) {
         max = int2;
-        document.write("max" + "" + max);
-    } else if (int3 > int1 && int3 > int1) { // dat dieu kien de int3 la so lon nhat
+     if (max < int3) {
         max = int3;
-        document.write("max" + "" + max);
+    }
+     document.write("So lon nhat trong ba so la: " + max);
+
+ /*   if (int1 > int2 && int1 > int3) { // dat dieu kien de int1 la so lon nhat
+        max = int1
+        document.writeln("max int1 : " + max + "<br>" + "int1" + int1 + "<br>" + "int2" + int2 + "<br>" + "int3" + int3);
+    } else if (int2 > int1 && int2 > int3) { // dat dieu kien de int2 la so lon nhat
+        max = int2
+        document.writeln("max int2 : " + max + "<br>" + "int1" + int1 + "<br>" + "int2" + int2 + "<br>" + "int3" + int3);
+    } else if (int3 > int1 && int3 > int1) { // dat dieu kien de int3 la so lon nhat
+        max = int3
+        document.writeln("max int3 : " + max + "<br>" + "int1" + int1 + "<br>" + "int2" + int2 + "<br>" + "int3" + int3);
     } else if (int1 == int2 && int2 == int3) { // dat dieu kien khi maximum value ko thoa man nhung dieu kien tren
         document.write("There is no max value");
     }
     ;
-
+*/
 </script>
 </body>
 </html>

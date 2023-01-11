@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    let doanhso = +prompt("nhap doanh so ban hang");
+    let incomeStore = +prompt("nhap doanh so ban hang");
     let total;
-    if (doanhso <= 200000000){
-        total = doanhso * 10 / 100;
+    if (incomeStore <= 200000000){
+        total = incomeStore * 10 / 100;
         document.write("tien hoa hong nhan duoc la:" + total);
-    } else if (doanhso > 200000000 && doanhso <= 500000000) {
-        total = doanhso * 20 / 100;
+    } else if (incomeStore > 200000000 && incomeStore <= 500000000) {
+        total = incomeStore * 20 / 100;
         document.write("tien hoa hong nhan duoc la:" + total);
-    } else if (doanhso > 500000000){
-        total = doanhso * 30 / 100;
+    } else if (incomeStore > 500000000){
+        total = incomeStore * 30 / 100;
         document.write("tien hoa hong nhan duoc la:" + total);
     }
 </script>
