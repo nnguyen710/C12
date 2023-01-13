@@ -6,8 +6,18 @@
 </head>
 <body>
 <script>
-    let arr =[];
-    for (let i = 0;)
+    let english = ["copper", "silver", "gold", "aluminum", "lithium"]; // nhập phần tử trong mảng
+    let vietnamese = ["đồng", "bạc", "vàng", "nhôm", "li thi"]; // nhập phần tử bằng tiếng việt
+    const outtake = document.getElementById("");
+    const intake = document.getElementById("metal elements");
+
+    function find() {
+        if (english.includes(intake.value)) {
+            let index = english.indexOf(intake.value);
+            outtake.innerText = vietnamese[index];
+        } else outtake.innerText = "Error!"
+
+    }
 </script>
 </body>
 </html>
