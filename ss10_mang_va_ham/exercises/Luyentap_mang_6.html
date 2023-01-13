@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt(" nhap phan tu cho mang i:");
+    }
+    document.write(arr + "<br>");
+
+
+    //nhap cac phan tu va khai bao bien
+
+    let v = +prompt("nhap so nguyen can kiem tra");
+
+    for (let i = 0; i < arr.length; i++) { // khai bao vong lap
+        if (v === arr[i]) { // dat dieu kien cho v
+            document.write("V is in the array");
+           // break; // neu phan tu khong nam trong mang thi se dung tim kiem
+        }
+    }
+
+</script>
 </body>
 </html>

@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    let count = 0; // dem so nguyen am
+    for(let i = 0; i < 5; i++){
+        arr[i] = +prompt("nhap phan tu i:");
+    }
+    document.write(arr+"<br>"); // thoat khoi vong lap de in ra mang
+
+    for (let i = 0; i < arr.length; i++) {
+       if (arr[i] < 0) { // dieu kien de co so nguyen am
+           count++; // dem so luong so nguyen am co trong mang
+       }
+    } document.write("Co " + " " + count + " " + "so be hon 0");
+</script>
 </body>
 </html>

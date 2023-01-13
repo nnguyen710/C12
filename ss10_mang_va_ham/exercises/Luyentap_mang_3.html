@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    for (let i = 0; i < 5; i++){ // viet ra 5 phan tu khac nhau
+        arr[i] = +prompt("Nhap phan tu i:");
+
+    } document.write(" tong so phan tu da nhap:" + arr + "<br>");
+
+    //let arr = [1, 2, 3, 4];
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++){ // cac dieu kien de chay cua mang
+        sum += arr[i]; // tinh tong cac phan tu trong mang
+    } document.write("Ket qua trung binh cong: " + sum / 2); // tong cac phan tu trong mang chia 2
+</script>
 </body>
 </html>

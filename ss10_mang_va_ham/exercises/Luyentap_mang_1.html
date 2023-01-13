@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+        for (let i = 0; i < 10; i++){ // viet ra 10 phan tu
+            arr[i] = +prompt("Nhap phan tu i:");
+        }
+        document.write(arr + "<br>");
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] >= 10) { // kiem tra bao nhiu phan tu lon hon hoac bang 10
+                document.write(arr[i]+ "<br>");
+            }
+        }
+</script>
 </body>
 </html>

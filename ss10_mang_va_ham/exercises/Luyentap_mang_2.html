@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++){ // viet ra 10 phan tu khac nhau
+        arr[i] = +prompt("Nhap phan tu i:");
+
+        } document.write(arr + "<br>");
+    let max = arr[0];
+    let index=0;
+    for (let i = 0; i < arr.length;i++){
+
+         // gan max bang phan tu dau tien
+        if (arr[i] > max) { // dat dieu kien cho max
+            max=  arr[i] ;
+            index=i;
+        }
+
+    } document.write("so lon nhat la:"  + max + "<br>");
+    document.write("Nam o vi tri:" + index);// thoat khoi vong lap
+
+</script>
 </body>
 </html>
