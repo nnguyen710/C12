@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const arr = [];
+    let length = +prompt("Nhập số để khai báo kích thước của mảng:"); // khai báo kích thước của mảng
+    arr.length = length;
+    let num;
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        num = prompt("Nhập số để khai báo ký tự của mảng:"); // khai báo ký tự của mảng
+        arr[i] = num;
+        if (!isNaN(arr[i])) // Nếu i không phải là ký tự thì đếm ký tự tiếp theo
+            count++;
+    }
+
+    document.write("Đây là số lượng ký tự:" + arr + "<br>");
+    document.write("Có tổng" + " " + count + " số ký tự trong mảng");
+</script>
+</body>
+</html>

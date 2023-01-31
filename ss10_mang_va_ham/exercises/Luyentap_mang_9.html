@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const a = new Array(10); // nhập vào mảng số nguyên a 10 phần tử
+    const b = new Array(10); // nhập vào mảng số nguyên b 10 phần tử
+    let c = []; // mảng c gồm 20 phần tử số nguyên
+
+    for (let i = 0; i < a.length; i++) {
+        let num1 = +prompt("Nhập một số nguyên vào mảng a:");
+        a[i] = num1;
+    }
+    for (let j = 0; j < b.length; j++) {
+        let num2 = +prompt("Nhập một số nguyên vào mảng b:");
+        b[j] = num2;
+    }
+    c = c.concat(a, b);
+    document.write(c)
+</script>
+</body>
+</html>
