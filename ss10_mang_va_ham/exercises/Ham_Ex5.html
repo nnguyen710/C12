@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Ex 5</title>
 </head>
-<body>
-$END$
+<body> onload="starSearching(input)">
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let input = prompt("Nhập vào ngôi sao bất kỳ để chọn chòm sao tương ứng:");
+
+    function starSearching(star) {
+        if (arr1.includes(star))
+            return alert(arr2[arr1.indexOf(star)]);
+        else
+            return alert("Không có ngôi sao nào tương ứng với với kết quả đã tìm");
+    }
+</script>
 </body>
 </html>

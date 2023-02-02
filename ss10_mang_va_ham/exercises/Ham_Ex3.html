@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
+    <title>Ex 3</title>
+</head> onload="numCheck(input1, input2)">
 <body>
-$END$
+<script>
+    let input1 = +prompt("Nhập số đầu tiên:");
+    let input2 = +prompt("Nhập số thứ hai:");
+
+    function numCheck(num1, num2) {
+        if (num1 > num2) return alert("num1 lớn hơn num2");
+        if (num1 <= num2) return alert("Tổng giá trị của num1 và num2: " + (num1 + num2));
+    }
+</script>
 </body>
 </html>

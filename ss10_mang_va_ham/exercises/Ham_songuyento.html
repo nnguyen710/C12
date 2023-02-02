@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let input = +prompt("Nhập vào số để nhận biết số nguyên tố:");
+
+    function primeNum(num) {
+        if (num === 0 || num === 1) { // đặt giá trị của số nguyên tố là 0 và 1
+            return false;
+        }
+        if (num === 2) return true;
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {  // nếu số thừa sau khi thực hiện phép tính bằng 0 thì trả về sai.
+                return false;
+            }
+            return true;
+        }
+    }
+
+    document.write(primeNum(input));
+</script>
 </body>
 </html>

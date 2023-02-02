@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Ex 2</title>
 </head>
-<body>
-$END$
+<body> onload="doIncrement(input)">
+<script>
+    let input = +prompt("Nhập số để tăng giá trị lên bằng 1:")
+
+    function doIncrement(num) {
+        num = num + 1;
+        return alert(num);
+    }
+</script>
 </body>
 </html>
