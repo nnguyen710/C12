@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 2.2</title>
+</head>
+<body>
+<p>Nhập bán kính để nhận được diện tích của vòng tròn:</p>
+<input type="number" id="num">
+<button onclick="areaCircle(input)">Area</button>
+<button onclick="perimeterCircle(input)">Perimeter</button>
+<script>
+    let input = document.getElementById("num");
+    const pi = 3.14;
+
+    function areaCircle(radius) {
+        let area = pi * (radius.value * radius.value); // công thức tính diện tích vòng tròn
+        return alert("Diện tích của vòng tròn là: " + area);
+    }
+
+    function perimeterCircle(radius) {
+        let perimeter = (radius.value * 2) * pi; // công thức tính chu vi của vòng tròn
+        return alert("Chu vi của vòng tròn là: " + perimeter);
+    }
+</script>
+</body>
+</html>
