@@ -11,37 +11,16 @@
     let num3 = +prompt(" nhập giá trị số nguyên thứ ba");
 
     function integerMin(a, b, c) {
-        let min = -1;
-        if (a > 0 && b > 0 && c > 0) {
-            if (a < b && a < c) {
-                min = a;
-                return min;
-            } else if (b < a && b < c) {
-                min = b;
-                return min;
-            } else if (c < a && c < b) {
-                min = c;
-                return min;
-            } else if (a == b || a < c) {
-                min = a;
-                return min;
-            } else if (b == c || b < a) {
-                min = b;
-                return min;
-            } else if (c == a || c < b) {
-                min = a
-                return min;
-            }
-        } else {
-            alert(" Nhập lại giá trị của số nguyên");
-            return;
-        }
+        let min = a;
+        if(b < min) {
+            min = b;
+        } else if(c < min) {
+            min = c;
+        } return min;
     }
 
-    document.write(integerMin()
-    Min(num1, num2, num3)
-    )
-    ;
+    document.write(integerMin(num1, num2, num3));
+
 
 </script>
 </body>

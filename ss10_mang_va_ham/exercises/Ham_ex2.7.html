@@ -8,27 +8,11 @@
 <SCRIPT>
     let num1 = +prompt(" nhập SỐ nguyên thứ 1");
     let num2 = +prompt(" nhập số nguyên thứ 2");
-    swappedNumber(num1, num2);
+    swappedNumber(num1, num2); // gọi function
 
     function swappedNumber(a, b) {
-        let c = 0;
-        if (a == b) {
-            c = a;
-            a = b;
-            b = c;
-            alert("A: " + a + "B: " + b);
-        } else if (a < b) {
-            c = a;
-            a = b;
-            b = c;
-            alert("A: " + a + "B: " + b);
-        } else if (a > b) {
-            c = a;
-            a = b;
-            b = c;
-            alert("A: " + a + "B: " + b);
-        }
-
+     arr = [a, b];
+     document.write(arr.reverse()) // sử dụng hàm đảo ngược có sẵn. 
     }
 </SCRIPT>
 </body>
