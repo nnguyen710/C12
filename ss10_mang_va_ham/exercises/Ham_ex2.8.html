@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 2.8</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3]
+    console.log(swappedElement(arr));
+
+    function swappedElement(array) {
+        let num = 0;
+        let first = 0;
+        let last = array.length - 1;
+        while (first < last) {
+            num = array[first];
+            array[first] = array[last];
+            array[last] = num;
+            first++;
+            last--;
+        }
+        return array;
+    }
+
+</script>
+</body>
+</html>

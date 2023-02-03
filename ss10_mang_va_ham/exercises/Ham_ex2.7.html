@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 2.7</title>
+</head>
+<body>
+<SCRIPT>
+    let num1 = +prompt(" nhập SỐ nguyên thứ 1");
+    let num2 = +prompt(" nhập số nguyên thứ 2");
+    swappedNumber(num1, num2);
+
+    function swappedNumber(a, b) {
+        let c = 0;
+        if (a == b) {
+            c = a;
+            a = b;
+            b = c;
+            alert("A: " + a + "B: " + b);
+        } else if (a < b) {
+            c = a;
+            a = b;
+            b = c;
+            alert("A: " + a + "B: " + b);
+        } else if (a > b) {
+            c = a;
+            a = b;
+            b = c;
+            alert("A: " + a + "B: " + b);
+        }
+
+    }
+</SCRIPT>
+</body>
+</html>

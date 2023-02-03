@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 2.9</title>
+</head>
+<body>
+<SCRIPT>
+    let array = [2, 5, 5, 7, 8];
+    let num = +prompt(" Nhập ký tự bất kỳ");
+    let count = 0;
+    function charCheck(array, num) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === num) {
+                count++;
+            }
+        }
+    } charCheck();
+    alert(num + count);
+</SCRIPT>
+</body>
+</html>
