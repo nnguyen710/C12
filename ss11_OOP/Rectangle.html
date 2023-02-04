@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <title>Rectangle</title>
 </head>
-<body> onload="docready()">
+<body>
+<div id="Rectangle"></div><canvas
+        id="canvasRectangle" width="500" height="600"
+        style="border:1px solid #D3D3D3;">
+</canvas>
 <script>
-
+    class Rectangle {
+        constructor(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+        getWidth() {
+            return this.width;
+        }
+        getLength() {
+            return this.length;
+        }
+        setWidth(width) {
+            this.width = width;
+        }
+        setLength(length) {
+            this.length = length;
+        }
+        area() {
+            return this.width * this.length;
+        }
+        perimeter() {
+            return (this.width + this.length) * 2;
+    let myRectangle = new Rectangle(100, 50);
+    alert(myRectangle.area());
+    alert(myRectangle.perimeter());
+    let c = document.getElementById("canvasRectangle");
+    let ctx = c.getContext("2d");    ctx.beginPath();
+    ctx.rect(20, 20, myRectangle.getWidth(), myRectangle.getLength());
+    ctx.stroke();
 </script>
 </body>
 </html>
