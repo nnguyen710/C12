@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+
+        constructor(celius) {
+            this.celius = celius
+        }
+
+        fahrenheit() {
+            return 9 / 5 * this.celius + 32;
+        }
+
+        kelvins() {
+            return this.celius + 273.15;
+        }
+    }
+
+    let temperature = new Temperature(+prompt("nhập vào độ c : "));
+    let fahrenheit = temperature.fahrenheit();
+    let kelvins = temperature.kelvins();
+    document.write("Nhiệt độ F là : " + fahrenheit + ' <br>' + 'Nhiệt độ K là : ' + kelvins);
+</script>
+</body>
+</html>
