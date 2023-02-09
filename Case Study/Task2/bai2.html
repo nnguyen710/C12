@@ -6,10 +6,10 @@
 </head>
 <body>
 <script>
-    let h = 5;
+    let h = +prompt("nhap chieu cao cua h");
     for (let i = 0; i < h; i++) {
         document.writeln("<br>");
-        for (let j = 5; j > i; j--) {
+        for (let j = h - 1; j >= i; j--) {
             document.writeln("&nbsp&nbsp");
         }
         for (let k = 0; k <= i * 2; k++) {
