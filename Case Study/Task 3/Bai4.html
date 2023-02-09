@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Tên đồ uống</th>
+        <th>Gía tiền</th>
+        <th>Số lượng</th>
+    </tr>
+    <tr>
+        <td>Cafe</td>
+        <td>30000</td>
+        <td><input id="cafe" type="number"></td>
+    </tr>
+    <tr>
+        <td>orangejuice</td>
+        <td>40000</td>
+        <td><input id="orangejuice" type="number"></td>
+    </tr>
+    <tr>
+        <td>cà rốt</td>
+        <td>40000</td>
+        <td><input id="carot" type="number"></td>
+    </tr>
+    <tr>
+        <td>coconutwater</td>
+        <td>35000</td>
+        <td><input id="coconutwater" type="number"></td>
+
+    </tr>
+    <tr>
+        <td>purewater</td>
+        <td>10000</td>
+        <td><input id="purewater" type="number"></td>
+    </tr>
+    <tr>
+        <td>tomatoes</td>
+        <td>10000</td>
+        <td><input id="tomatoes" type="number"></td>
+    </tr>
+    <tr>
+       <th> <button type="button" onclick="totalbill()" >Thanh tien</button> </th>
+        <th colspan="2" id="total"></th>
+    </tr>
+    </table>
+<script>
+    function totalbill() {
+        let cafe = document.getElementById('cafe').value;
+        let orangejuice = document.getElementById('orangejuice').value;
+        let carot = document.getElementById('carot').value;
+        let tomatoes = document.getElementById('tomatoes').value;
+        let purewater = document.getElementById('purewater').value;
+        let coconutwater = document.getElementById('coconutwater').value;
+        let total = cafe * 30000 + orangejuice * 40000 + carot * 35000 + tomatoes * 35000 + purewater * 10000 + coconutwater * 35000;
+        document.getElementById("total").innerHTML = total + ' VNĐ';
+    }
+</script>
+</body>
+</html>
