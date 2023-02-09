@@ -6,21 +6,20 @@
 </head>
 <body>
 <script>
-    let a = +prompt("nhap so luong");
-    let b;
-    let c;
-    if (a > 15000000) {
-        tax = 0.2 * a;
-        b = a - c;
-    } else if (a >= 7000000 && a <= 15000000){
-        tax = 0.1 * a;
-        b = a - (0.1 * a );
-    } else if (a < 7) {
-        tax = 0.05 * a;
-        b = a - (0.05 * a);
+    let luongCung = +prompt("nhap so luong");
+    let tienThue = 0;
+    let tienNhan = 0;
+    if (luongCung >= 15000000) {
+        tienThue = luongCung * 0.2;
+        tienNhan = luongCung - tienThue;
+    } else if (luongCung >= 7000000) {
+        tienThue = luongCung * 0.1;
+        tienNhan = luongCung - tienThue;
+    } else {
+        tienThue = luongCung * 0.05;
+        tienNhan = luongCung - tienThue;
     }
-    document.writeln(c + '<br>');
-    document.writeln(b);
+    document.write(tienNhan);
 </script>
 </body>
 </html>
