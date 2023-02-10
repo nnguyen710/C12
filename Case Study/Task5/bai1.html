@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    let arr = [];
+    let m = +prompt(" Nhập độ dài của mảng:");
+        for (i = 0; i < m; i++) {
+            n = +prompt("nhap");
+            let arrChild = Array();
+            for (j = 0; j < n; j++) {
+                arrChild[j]= +prompt("Nhap gia tri cua phan tu:");
+                arr[i]= arrChild;
+            }
+        }
+    console.log(arr);
+
+
+    let sum = 0;//1
+    for (let i = 0; i < arr.length; i++) {//m[i][j]
+        for (j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] % 2 == 0) {
+                sum += arr[i][j];//0+1, 1 +2, 3 +3, 6 + 4, 10 + 5, 15 + 6 =21
+            }
+            //  document.write(m[i][j]); // m[0][1], m[1][0], sum = m[0] + m[1] + m[2]
+        }
+    }
+    document.write(sum);
+
+    //  if (m[i][j]) % 2 == 0) {
+    // sum += m[i][j];
+
+</script>
+</body>
+</html>

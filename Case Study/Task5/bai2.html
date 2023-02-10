@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkPrimeNum(a) {
+        let count = 0;
+        for (let i = 1; i <= a; i++) {
+            if (a % i === 0) {
+                count++;
+            }
+        }
+        if (count === 2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let arr = [];
+    let m = +prompt(" Nhập độ dài của mảng:");
+    for (let i = 0; i < m; i++) {
+        n = +prompt("Nhập:");
+        let arrChild = Array();
+        for (let j = 0; j < n; j++) {
+            arrChild[j]= +prompt("Nhập giá trị của phần tử:");
+            arr[i]= arrChild;
+        }
+    }
+    console.log(arr);
+    let arr1 = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (checkPrimeNum(arr[i][j])) {
+                arr1.push(arr[i][j]);
+            }
+        }
+
+    }
+    document.write("Tổng số lượng số nguyên tố là" + arr1 + "<br>");
+    document.write("Tổng số lượng số nguyên tố là " + arr1.length);
+</script>
+</body>
+</html>

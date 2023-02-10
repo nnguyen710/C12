@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkMax(arr) {
+        let max = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+            }
+        }
+        return max;
+    }
+
+    function checkMin(arr) {
+        let min = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] < min) {
+                    min = arr[i][j];
+                }
+            }
+        }
+        return min;
+    }
+
+
+    let m = +prompt(" Nhập độ dài của mảng cha:");
+    let arr1 = new Array(m);
+    for (let i = 0; i < m; i++) {
+       let  n = +prompt("nhap do dai mang con");
+        let arrChild = new Array(n);
+        for (let j = 0; j < n; j++) {
+            arrChild[j] = +prompt("Nhap gia tri cua phan tu cua mang con:");
+
+        }
+        arr1[i] = arrChild
+    }
+    document.write(arr1+"<br>");
+    document.write("Max " + checkMax(arr1)+"<br>");
+    document.write("Min " + checkMin(arr1));
+</script>
+</body>
+</html>
