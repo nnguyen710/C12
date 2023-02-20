@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a = +prompt("Số tuổi của ông già đẻ ra thằng con");
+    // let b = +prompt("Số tuổi của thằng trời đánh");
+    // let count = a - b;
+    // if ( a > b + 25) {
+    //     while (count === (2 * b)) {
+    //         // if ((b + count) * 2 === a + count) {
+    //         alert("sau" + count + "năm thì tuổi cha gấp đôi tuổi con");
+    //     }
+    // }
+    // else {
+    //     alert("mời nhập lại số tuổi");
+    //
+    // }
+    let a = +prompt("Số tuổi của ông già đẻ ra thằng con");
+    let b = +prompt("Số tuổi của thằng trời đánh");
+    if (a > b + 25) {
+        for (let i = 0; ; i++) {
+            if (a + i === (b + i) * 2) {
+                alert("sau" + i + "năm thì tuổi bố mày gấp đôi tuổi con");
+        break;
+            }
+        }
+    } else {
+        alert("phép toán sai");
+    }
+</script>
+</body>
+</html>

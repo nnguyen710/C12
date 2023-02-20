@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let n;
+    // do { n = +prompt("nhap do dai cua mang:");
+    // } while(n > 50);
+    //
+    // let arr = [];
+    //  for (let i = 0; i < n; i++){
+    //      arr[i] = +prompt("nhap phan tu cua mang:");
+    //  }
+    //  document.write("mang sau khi nhap la" + arr + "<br>");
+    //
+    //  let count = 0;
+    //  let sum = 0;
+    //     for( let i = 0; i < arr.length; i++) {
+    //         if (arr[i] % 5 == 0) {
+    //             sum += arr[i];
+    //             count++;
+    //         }
+    //     }
+    //     if (count === 0) {
+    //         document.write("khong co phan tu nao chia het cho 5 o vi tri thu 3")
+    //         } else {
+    //         document.write("")
+    //     }
+    // let arr = [];
+    // let n = +prompt("Yeu cau nhap so:");
+    // if (n > 50) {
+    //     alert("Nhap so be hon hoac bang 50")
+    // } else if (n <= 50) {
+    let n;
+    do {
+        n = +prompt("nhap do dai cua mang");
+    } while (n >=50);
+    let arr = [];
+    for (let i = 0; i < n; i++){
+        arr[i] = +prompt("nhap phan tu cho mang");
+    }
+    document.write(arr + "<br>");
+
+    let count  = 0;
+    let sum = 0;
+        for (let i = 0 ; i < arr.length; i+=3) {
+            if (arr[i] % 5 == 0) {
+                sum+= arr[i];
+                count++;
+            }
+        }
+        if (count == 0) {
+            document.write("khong co phan tu nao chia het cho 5 tai vi tri chia het cho 3");
+        } else {
+            document.write(sum / count);
+            }
+    // console.log(arr);
+    //
+    // let count = 0;
+    // let sum = 0;
+    //     for (let i = 0; i < arr.length; i+=3){
+    //         if (arr[i] % 5 === 0){
+    //             sum += arr[i];
+    //             count++;
+    //         }
+    //     } document.write(sum / count);
+</script>
+</body>
+</html>
