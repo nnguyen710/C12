@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = +prompt("nhap do dai cua mang");
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("nhap phan tu" + (i + 1));
+    } console.log(arr)
+    function tinhTong() {
+        for(let i = 0; i < n ;i++){
+            if ( arr[i] % 2 ===0 && i % 2 !==0){
+                   sum  += arr[i];
+
+            }
+        }return sum;
+
+    }console.log(tinhTong());
+</script>
+</body>
+</html>

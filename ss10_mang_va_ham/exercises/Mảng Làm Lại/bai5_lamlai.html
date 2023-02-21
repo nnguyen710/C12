@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap do dai mang");
+    let arr = [];
+    let a;
+
+    for (let i = 0; i < n; i++) {
+        do {
+            a = +prompt("nhap so can kiem tra");
+            if (arr.indexOf(a) === -1) {
+                arr.push(a);
+                break;
+            } else {
+                alert("phan tu da trung , moi nhap lai");
+            }
+
+        } while (true);
+    }
+    document.write(arr);
+
+</script>
+</body>
+</html>

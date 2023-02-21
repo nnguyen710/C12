@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let arr1 = [];
+    let n = +prompt("Nhap do dai cua mang");
+    for (let i = 0; i < n; i++){
+            arr[i] = +prompt("Nhap phan tu" + (i + 1));
+    }
+    for (let j = 0; j < n; j++){
+        for (let k = 0; j <arr[j]; k++){
+            if (arr[j] === k * k){
+                arr1[j].push(arr[j]);
+            }
+        }
+    }
+    document.write(arr + "<br>");
+    document.write("So chinh phuong trong mang la" + arr1);
+</script>
+</body>
+</html>
