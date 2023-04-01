@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="addAccount()">Thêm tài khoản</button>
+<div id="result"></div>
+<script>
+    class Account {
+        constructor(accountNumber, name, money) {
+            this.accountNumber = accountNumber;
+            this.name = name;
+            this.money = money;
+        }
+
+        getAcountNumber() {
+            return this.accountNumber;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getMoney() {
+            return this.money;
+        }
+
+        setRecharge(money) {
+            if (money > 0) {
+                this.money += money;
+            }
+        }
+
+        setWithdrawal(money) {
+            if (money - this.money > 0) {
+                document.writeln("Số dư không đủ ");
+            } else {
+                this.money -= money;
+            }
+        }
+    }
+
+    let account = new Account(  '911', 'Nguyễn Danh', 100);
+    document.writeln('Stk : ' + account.accountNumber + ' Tên : ' + account.name
+        + ' Số dư :' + account.money + '<br>');
+    account.setWithdrawal(20);
+    account.setRecharge(130);
+    document.writeln(account.getMoney())
+    let array = [account];
+
+    let table = "<table>\n"
+        +"<tr>\n"
+        +"<th> Số tài khoản </th>\n"
+        +"<th> tên </th>\n"
+        +"<th> tiền </th>\n"
+        "</tr>\n"
+        "</table>"
+    for(let i = 0 ; i < array.length ; i++){
+        table += "<tr>\n"
+            +"<td>" + array[i].getAcountNumber()+ "</td>\n"
+            +"<td>" + array[i].getName()+ "</td>\n"
+            +"<td>" + array[i].getMoney()+ "</td>\n"
+            "</tr>\n"
+
+    }
+    function displayAccount() {
+        console.log()
+    }
+
+</script>
+</body>
+</html>
